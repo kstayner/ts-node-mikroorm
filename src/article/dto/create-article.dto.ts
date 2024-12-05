@@ -1,5 +1,5 @@
 export class CreateArticleDto {
-  readonly title!: string;
+  readonly userText!: string;
   readonly description!: string;
   readonly body!: string;
   readonly tagList!: string[];
