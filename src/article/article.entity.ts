@@ -14,7 +14,7 @@ export class Article {
   slug: string;
 
   @Property()
-  title: string;
+  userText: string;
 
   @Property()
   description = '';
@@ -40,12 +40,12 @@ export class Article {
   @Property()
   favoritesCount = 0;
 
-  constructor(author: User, title: string, description: string, body: string) {
+  constructor(author: User, userText: string, description: string, body: string) {
     this.author = author;
-    this.title = title;
+    this.userText = userText;
     this.description = description;
     this.body = body;
-    this.slug = slug(title, { lower: true }) + '-' + (Math.random() * Math.pow(36, 6) | 0).toString(36);
+    this.slug = slug(userText, { lower: true }) + '-' + (Math.random() * Math.pow(36, 6) | 0).toString(36);
   }
 
   toJSON(user?: User) {

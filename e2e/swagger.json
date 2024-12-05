@@ -965,7 +965,7 @@
         "slug": {
           "type": "string"
         },
-        "title": {
+        "userText": {
           "type": "string"
         },
         "description": {
@@ -1000,7 +1000,7 @@
       },
       "required": [
         "slug",
-        "title",
+        "userText",
         "description",
         "body",
         "tagList",
@@ -1043,7 +1043,7 @@
     "NewArticle": {
       "type": "object",
       "properties": {
-        "title": {
+        "userText": {
           "type": "string"
         },
         "description": {
@@ -1060,7 +1060,7 @@
         }
       },
       "required": [
-        "title",
+        "userText",
         "description",
         "body"
       ]
@@ -1079,7 +1079,7 @@
     "UpdateArticle": {
       "type": "object",
       "properties": {
-        "title": {
+        "userText": {
           "type": "string"
         },
         "description": {
