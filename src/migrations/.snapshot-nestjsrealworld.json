@@ -133,8 +133,8 @@
           "nullable": false,
           "mappedType": "string"
         },
-        "userText": {
-          "name": "userText",
+        "title": {
+          "name": "title",
           "type": "varchar(255)",
           "unsigned": false,
           "autoincrement": false,
